@@ -1,0 +1,154 @@
+/* Reset / Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header & Nav */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav ul li a {
+  padding: 8px 10px;
+  transition: color 0.3s;
+}
+
+.site-nav ul li a:hover {
+  color: #555;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 16px;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  margin: 0 16px 16px 16px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 16px;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* Content Section */
+.content {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+.site-footer small {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #bbb;
+}
