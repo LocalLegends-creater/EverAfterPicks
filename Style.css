@@ -1,4 +1,4 @@
-/* Reset / Base */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +7,9 @@
 
 body {
   font-family: 'Georgia', serif;
+  background-color: #fffaf7;
   color: #3a2f2b;
-  background-color: #fdfaf6;
   line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* Containers */
@@ -24,7 +19,7 @@ a {
   margin: 0 auto;
 }
 
-/* Header & Nav */
+/* Header */
 .site-header {
   background-color: #f4ede4;
   padding: 20px 0;
@@ -35,6 +30,7 @@ a {
   font-size: 2rem;
   font-weight: bold;
   color: #3a2f2b;
+  text-decoration: none;
 }
 
 .site-nav ul {
@@ -44,47 +40,33 @@ a {
   flex-wrap: wrap;
 }
 
-.site-nav ul li a {
-  padding: 8px 10px;
+.site-nav a {
+  text-decoration: none;
+  color: #3a2f2b;
   font-weight: bold;
+  padding: 8px 10px;
   transition: color 0.3s;
 }
 
-.site-nav ul li a:hover {
+.site-nav a:hover {
   color: #7a5c4b;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  background-image: url('images/james-river-banner.jpg'); /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  color: #fff;
+  background-color: #eae2d6;
   text-align: center;
-  padding: 100px 20px;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.hero .container {
-  position: relative;
-  z-index: 1;
+  padding: 80px 20px;
 }
 
 .hero h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  color: #f0eae2;
+  font-size: 1.2rem;
+  color: #5c4a3c;
 }
 
 /* Product Grid */
@@ -118,7 +100,6 @@ a {
 .product-card h3 {
   margin: 16px;
   font-size: 1.3rem;
-  color: #3a2f2b;
 }
 
 .product-card p {
@@ -142,16 +123,15 @@ a {
   background-color: #7a5c4b;
 }
 
-/* Content Section */
-.content {
+/* Blog Preview */
+.blog-preview {
   text-align: center;
   margin: 60px 0;
 }
 
-.content h2 {
+.blog-preview h2 {
   font-size: 2rem;
   margin-bottom: 16px;
-  color: #3a2f2b;
 }
 
 /* Footer */
@@ -168,19 +148,4 @@ a {
   margin-top: 8px;
   font-size: 0.8rem;
   color: #bbb;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-  .site-nav ul {
-    justify-content: center;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
 }
