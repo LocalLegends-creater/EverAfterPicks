@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Georgia', serif;
-  color: #111;
-  background-color: #fff;
+  color: #3a2f2b;
+  background-color: #fdfaf6;
   line-height: 1.6;
 }
 
@@ -26,50 +26,65 @@ a {
 
 /* Header & Nav */
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #f4ede4;
   padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d8cfc0;
 }
 
 .site-title a {
   font-size: 2rem;
   font-weight: bold;
-  color: #111;
+  color: #3a2f2b;
 }
 
 .site-nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .site-nav ul li a {
   padding: 8px 10px;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
 .site-nav ul li a:hover {
-  color: #555;
+  color: #7a5c4b;
 }
 
 /* Hero Section */
 .hero {
+  background-image: url('images/james-river-banner.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
   text-align: center;
-  padding: 80px 20px;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ddd;
+  padding: 100px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.3rem;
+  color: #f0eae2;
 }
 
 /* Product Grid */
@@ -82,7 +97,7 @@ a {
 
 .product-card {
   background-color: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #e8e2d9;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -103,17 +118,18 @@ a {
 .product-card h3 {
   margin: 16px;
   font-size: 1.3rem;
+  color: #3a2f2b;
 }
 
 .product-card p {
   margin: 0 16px 16px 16px;
-  color: #555;
+  color: #6e5c4b;
   flex-grow: 1;
 }
 
 .btn {
   display: inline-block;
-  background-color: #111;
+  background-color: #3a2f2b;
   color: #fff;
   padding: 12px 20px;
   margin: 16px;
@@ -123,7 +139,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #333;
+  background-color: #7a5c4b;
 }
 
 /* Content Section */
@@ -135,11 +151,12 @@ a {
 .content h2 {
   font-size: 2rem;
   margin-bottom: 16px;
+  color: #3a2f2b;
 }
 
 /* Footer */
 .site-footer {
-  background-color: #111;
+  background-color: #3a2f2b;
   color: #eee;
   text-align: center;
   padding: 30px 0;
@@ -151,4 +168,19 @@ a {
   margin-top: 8px;
   font-size: 0.8rem;
   color: #bbb;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .site-nav ul {
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
