@@ -154,7 +154,7 @@ body {
   align-items: flex-start;
 }
 
-/* Sidebar */
+/* Sidebar with selection box */
 .sidebar {
   width: 200px;
   background-color: #f4ede4;
@@ -168,23 +168,14 @@ body {
   margin-bottom: 16px;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar ul li a {
+.category-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #d8cfc0;
+  border-radius: 4px;
+  background-color: #fff;
   color: #3a2f2b;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.sidebar ul li a:hover {
-  color: #7a5c4b;
 }
 
 /* Product Area */
