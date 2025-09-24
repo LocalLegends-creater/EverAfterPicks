@@ -101,11 +101,6 @@ body {
 /* Product Area */
 .product-area {
   flex: 1;
-}
-
-.product-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -123,12 +118,7 @@ body {
   margin-bottom: 60px;
 }
 
-/* Featured Picks Grid */
-.featured-grid .product-card {
-  width: 300px;
-}
-
-/* Smaller Category Grid */
+/* Smaller Grid for Featured Picks and Wedding Signs */
 .small-grid .small-card {
   width: 220px;
 }
@@ -179,4 +169,4 @@ body {
 }
 
 .btn:hover {
-  background-color
+  background-color: #7a5c4
