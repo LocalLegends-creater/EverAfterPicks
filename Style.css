@@ -169,11 +169,4 @@ body {
   display: inline-block;
   background-color: #3a2f2b;
   color: #fff;
-  padding: 10px 16px;
-  border-radius: 4px;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #7a
+  padding: 10px 
