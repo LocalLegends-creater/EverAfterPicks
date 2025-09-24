@@ -93,7 +93,6 @@ body {
 
 /* Featured Picks Grid */
 .featured-grid {
-  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -182,4 +181,5 @@ body {
 .storefront {
   display: flex;
   gap: 40px;
-  margin
+  margin: 60px auto;
+  align-items:
