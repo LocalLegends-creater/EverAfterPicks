@@ -91,8 +91,9 @@ body {
   border: 1px solid #e8e2d9;
   border-radius: 8px;
   width: 300px;
-  padding-bottom: 20px;
+  padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
 }
 
 .product-card:hover {
@@ -103,16 +104,17 @@ body {
 .product-card img {
   width: 100%;
   object-fit: cover;
+  margin-bottom: 16px;
 }
 
 .product-card h3 {
-  margin: 16px 0 8px;
   font-size: 1.3rem;
+  margin-bottom: 8px;
 }
 
 .product-card p {
-  margin: 0 16px 16px;
   color: #6e5c4b;
+  margin-bottom: 16px;
 }
 
 .btn {
@@ -120,7 +122,6 @@ body {
   background-color: #3a2f2b;
   color: #fff;
   padding: 12px 20px;
-  margin: 0 auto;
   border-radius: 4px;
   text-align: center;
   transition: background-color 0.3s;
@@ -133,11 +134,17 @@ body {
 /* Blog Preview */
 .blog-preview {
   margin: 60px 0;
+  text-align: center;
 }
 
 .blog-preview h2 {
   font-size: 2rem;
   margin-bottom: 16px;
+}
+
+.blog-preview p {
+  margin-bottom: 16px;
+  color: #6e5c4b;
 }
 
 /* Footer */
