@@ -1,4 +1,4 @@
-/* Base Reset */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@ body {
   background-color: #fffaf7;
   color: #3a2f2b;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Containers */
@@ -36,9 +37,9 @@ body {
 .site-nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 10px;
 }
 
@@ -57,7 +58,6 @@ body {
 /* Hero */
 .hero {
   background-color: #eae2d6;
-  text-align: center;
   padding: 80px 20px;
 }
 
@@ -72,17 +72,12 @@ body {
 }
 
 /* Product Grid */
-.product-grid-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 60px 0;
-}
-
 .product-grid {
   display: flex;
+  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 60px 0;
 }
 
 .product-card {
@@ -90,9 +85,7 @@ body {
   border: 1px solid #e8e2d9;
   border-radius: 8px;
   width: 300px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -107,14 +100,13 @@ body {
 }
 
 .product-card h3 {
-  margin: 16px;
+  margin: 16px 0 8px;
   font-size: 1.3rem;
 }
 
 .product-card p {
-  margin: 0 16px 16px 16px;
+  margin: 0 16px 16px;
   color: #6e5c4b;
-  flex-grow: 1;
 }
 
 .btn {
@@ -122,7 +114,7 @@ body {
   background-color: #3a2f2b;
   color: #fff;
   padding: 12px 20px;
-  margin: 16px;
+  margin: 0 auto;
   border-radius: 4px;
   text-align: center;
   transition: background-color 0.3s;
@@ -134,7 +126,6 @@ body {
 
 /* Blog Preview */
 .blog-preview {
-  text-align: center;
   margin: 60px 0;
 }
 
@@ -147,7 +138,6 @@ body {
 .site-footer {
   background-color: #3a2f2b;
   color: #eee;
-  text-align: center;
   padding: 30px 0;
   font-size: 0.9rem;
 }
