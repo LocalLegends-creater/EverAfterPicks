@@ -56,15 +56,16 @@ body {
 
 /* Storefront Layout */
 .storefront {
-  display: grid;
-  grid-template-columns: 220px 1fr;
+  display: flex;
   gap: 40px;
   margin: 60px auto;
   max-width: 1200px;
+  align-items: flex-start;
 }
 
 /* Sidebar */
 .sidebar {
+  width: 220px;
   background-color: #f4ede4;
   padding: 20px;
   border-radius: 8px;
@@ -99,6 +100,12 @@ body {
 
 /* Product Area */
 .product-area {
+  flex: 1;
+}
+
+.product-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -172,9 +179,4 @@ body {
 }
 
 .btn:hover {
-  background-color: #7a5c4b;
-}
-
-/* Footer */
-.site-footer {
-  background-color: #3a2f2b;
+  background-color
