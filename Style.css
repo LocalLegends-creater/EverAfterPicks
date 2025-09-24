@@ -119,12 +119,26 @@ body {
   margin-bottom: 60px;
 }
 
+/* Featured Picks Grid */
+.featured-grid .product-card {
+  width: 300px;
+}
+
+/* Smaller Category Grid */
+.small-grid .small-card {
+  width: 220px;
+}
+
+.small-grid .small-card img {
+  height: auto;
+  max-height: 150px;
+}
+
 /* Product Card */
 .product-card {
   background-color: #fff;
   border: 1px solid #e8e2d9;
   border-radius: 8px;
-  width: 300px;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
@@ -142,7 +156,7 @@ body {
 }
 
 .product-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 8px;
 }
 
@@ -155,16 +169,11 @@ body {
   display: inline-block;
   background-color: #3a2f2b;
   color: #fff;
-  padding: 12px 20px;
+  padding: 10px 16px;
   border-radius: 4px;
   text-align: center;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #7a5c4b;
-}
-
-/* Footer */
-.site-footer {
-  background-color: #3a2f2b;
+  background-color: #7a
