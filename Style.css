@@ -38,6 +38,8 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .site-nav a {
@@ -70,17 +72,24 @@ body {
 }
 
 /* Product Grid */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+.product-grid-wrapper {
+  display: flex;
+  justify-content: center;
   margin: 60px 0;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-card {
   background-color: #fff;
   border: 1px solid #e8e2d9;
   border-radius: 8px;
+  width: 300px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
