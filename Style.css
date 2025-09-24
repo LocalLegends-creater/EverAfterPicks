@@ -71,16 +71,13 @@ body {
   color: #5c4a3c;
 }
 
-/* Product Section */
-.product-section {
-  margin: 60px 0;
-}
-
+/* Product Grid */
 .product-grid {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  margin: 60px 0;
 }
 
 .product-card {
@@ -147,6 +144,58 @@ body {
 .blog-preview p {
   margin-bottom: 16px;
   color: #6e5c4b;
+}
+
+/* Storefront Layout */
+.storefront {
+  display: flex;
+  gap: 40px;
+  margin: 60px auto;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f4ede4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.sidebar h2 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #3a2f2b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #7a5c4b;
+}
+
+/* Product Area */
+.product-area {
+  flex: 1;
+  text-align: center;
+}
+
+.product-area h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 /* Footer */
