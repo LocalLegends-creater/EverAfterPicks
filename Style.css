@@ -63,7 +63,7 @@ body {
   max-width: 1200px;
 }
 
-/* Sidebar Box */
+/* Sidebar */
 .sidebar {
   width: 220px;
   background-color: #f4ede4;
@@ -120,7 +120,8 @@ body {
 
 /* Featured Picks Grid */
 .featured-grid {
-  max-width: 960px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -175,3 +176,7 @@ body {
   padding: 10px 16px;
   border-radius: 4px;
   text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn:hover
